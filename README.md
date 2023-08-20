@@ -8,6 +8,7 @@ Steps:
 - set up an index to use on Pinecone (https://www.pinecone.io/)
 - follow data_upload.ipynb step by step to upload data
 - customize prompt in prompts.py
+- create a secrets.toml file in .streamlit and add Pinecone information
 - run: streamlit run app.py
 
 Sources for this repository:
