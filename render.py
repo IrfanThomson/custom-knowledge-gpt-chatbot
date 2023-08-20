@@ -1,29 +1,6 @@
 import streamlit as st
 import re
 
-
-bot_msg_container_html_template = '''
-<div style='background-color: #FFFFFF; padding: 10px; border-radius: 5px; margin-bottom: 10px; display: flex'>
-    <div style="width: 20%; display: flex; justify-content: center">
-        <img src="https://yt3.googleusercontent.com/ixwBtVrollE0Z5nA5YPHrnkKQoK09Evbe4gWCvJlleB2rFERDz3m2Jynhc3sGBE-EnzbH6ov=s176-c-k-c0x00ffffff-no-rj" style="max-height: 50px; max-width: 50px; border-radius: 50%;">
-    </div>
-    <div style="width: 80%;">
-        $MSG
-    </div>
-</div>
-'''
-
-user_msg_container_html_template = '''
-<div style='background-color: #FFFFFF; padding: 10px; border-radius: 5px; margin-bottom: 10px; display: flex'>
-    <div style="width: 78%">
-        $MSG
-    </div>
-    <div style="width: 20%; margin-left: auto; display: flex; justify-content: center;">
-        <img src="https://yt3.googleusercontent.com/w3Hwj4_weJ_tx9z79ffwCmaAU3eHPuJ5nvk_QDmNyxcbNdTaBBAIxenUXGybyUjLE4ktVKqyEA=s176-c-k-c0x00ffffff-no-rj" style="max-width: 50px; max-height: 50px; float: right; border-radius: 50%;">
-    </div>    
-</div>
-'''
-
 def render_article_preview(docs, tickers):
     message = f"<h5>Here are relevant articles for {tickers} that may answer your question. &nbsp; &nbsp;</h5>"
     message += "<div>"
