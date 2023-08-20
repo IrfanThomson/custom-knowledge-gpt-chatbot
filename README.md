@@ -1,2 +1,11 @@
 # custom-knowledge-gpt-chatbot
-Ready to go custom knowledge chatbot where you essentially put the data in a file, run 2 scripts, and have a bot through Pinecone and GPT.
+Designed to make setting up a chatbot as easy as possible.
+Steps:
+- run: git clone https://github.com/IrfanThomson/custom-knowledge-gpt-chatbot.git
+- run: cd custom-knowledge-gpt-chatbot
+- run: pip install -r requirements.txt
+- put text data in ./data/data.txt
+- set up an index to use on Pinecone (https://www.pinecone.io/)
+- follow data_upload.ipynb step by step to upload data
+- customize prompt in prompts.py
+- run: streamlit run app.py
