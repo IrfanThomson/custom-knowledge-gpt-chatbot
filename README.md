@@ -9,3 +9,7 @@ Steps:
 - follow data_upload.ipynb step by step to upload data
 - customize prompt in prompts.py
 - run: streamlit run app.py
+
+Sources for this repository:
+https://www.youtube.com/watch?v=h0DHDp1FbmQ
+https://www.youtube.com/watch?v=86Gw317oEHk
